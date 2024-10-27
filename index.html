@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="items-center justify-center flex bg-blue-950">
+   <form class=" border-black border border-solid bg-blue-300 w-60vh h-80vh rounded-xl py-5 px-5  mt-10" name="form">
+       <input type="text" placeholder="ENTER NUMBER" class="w-full rounded-lg h-16 px-5  border-black border" name="display" >
+       
+       <div class="rows w-full h-12vh p-2 gap-4 flex items-center justify-center">
+           <input type="button" value="1" class="p-2 bg-white border-solid border-black border w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-gray-700  " onclick="form.display.value+='1'">
+           <input type="button" value="2" class="p-2 bg-white w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-gray-700  border-black border" onclick="form.display.value+='2'">
+           <input type="button" value="3" class="p-2 bg-white w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-gray-700  border-black border" onclick="form.display.value+='3'">
+           <input type="button" value="+" class="p-2  w-16 h-16 rounded-lg text-xl bg-yellow-500 hover:drop-shadow-xl hover:shadow-yellow-500  border-black border" onclick="form.display.value+='+'" >
+       </div>
+       
+       <div class="rows w-full h-12vh p-2 gap-4 flex items-center justify-center">
+           <input type="button" value="4" class="p-2 bg-white w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-gray-700  border-black border" onclick="form.display.value+='4'">
+           <input type="button" value="5" class="p-2 bg-white w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-gray-700  border-black border" onclick="form.display.value+='5'">
+           <input type="button" value="6" class="p-2 bg-white w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-gray-700  border-black border" onclick="form.display.value+='6'">
+           <input type="button" value="-" class="p-2  bg-yellow-500 w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-yellow-500  border-black border " onclick="form.display.value+='-'">
+       </div>
+       
+       <div class="rows w-full h-12vh p-2 gap-4 flex items-center justify-center">
+           <input type="button" value="7" class="p-2 bg-white w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-gray-700  border-black border" onclick="form.display.value+='7'">
+           <input type="button" value="8" class="p-2 bg-white w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-gray-700  border-black border" onclick="form.display.value+='8'">
+           <input type="button" value="9" class="p-2 bg-white w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-gray-700  border-black border" onclick="form.display.value+='9'">
+           <input type="button" value="*" class="p-2  bg-yellow-500 w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-yellow-500   border-black border" onclick="form.display.value+='*'">
+       </div>
+       
+       <div class="rows w-full h-12vh p-2 gap-4 flex items-center justify-center">
+           <input type="button" value="0" class="p-2 bg-white w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-gray-700  border-black border" onclick="form.display.value+='0'">
+           <input type="button" value="C" class="p-2  bg-yellow-500 w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-yellow-500  border-black border" onclick="form.display.value =' ' ">
+           <input type="button" value="=" class="p-2  bg-yellow-500 w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-yellow-500  border-black border" onclick="form.display.value=eval(display.value)">
+           <input type="button" value="/" class="p-2  bg-yellow-500 w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-yellow-500  border-black border" onclick="form.display.value+='/'">
+       </div>
+       <div class="rows w-full h-12vh p-2 gap-4 flex items-center justify-start ml-7">
+        <input type="button" value="x" class="p-2  bg-yellow-500  w-16 h-16 rounded-lg text-xl hover:drop-shadow-xl hover:shadow-gray-700  border-black border" onclick="form.display.value=display.value.toString().slice(0,-1)">
+       </div>
+   </form>
+
+   
+</body>
+</html>
